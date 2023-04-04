@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap');
 @import './navbar.css';
 @import './buttons.css';
-
+@import './background.css';
+@import './inputs.css';
+@import './position.css';
+@import './colors.css';
 /* Config de cores */
+
+
 :root {
-    --bg-orange: #f46a05;
+    --bg-orange: #2600ce;
     --bg-orange-hover: #d85f08;
     --bg-orange-black: #000;
     --bg-marron-1: #757575;
