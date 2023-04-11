@@ -1,6 +1,38 @@
-.btn-orange {
+.btn-purple {
     color: var(--bg-white);
-    background-color: var(--bg-orange);
+    background-color: var(--bg-purple);
+    outline: none;
+    box-shadow: none;
+    font-size: 1rem;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+}
+
+.btn-purple:hover {
+    color: var(--bg-white);
+    background-color: var(--bg-purple-hover);
+}
+
+.btn-purple-outline {
+    color: var(--bg-purple);
+    background-color: transparent;
+    outline: 2px solid var(--bg-purple);
+    box-shadow: none;
+    font-size: 1rem;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+}
+
+.btn-purple-outline:hover {
+    color: var(--bg-white);
+    background-color: var(--bg-purple);
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn-blue {
+    color: var(--bg-white);
+    background-color: var(--bg-blue);
     outline: none;
     box-shadow: none;
     font-size: 1rem;
