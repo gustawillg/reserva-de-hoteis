@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon-16x16.png" type="image/x-icon">
 </head>
 <body>
      <!--Navbar-->
@@ -32,10 +33,10 @@
                         </li>
                         <!--Botão aparece quando a tela tiver menor-->
                         <li class="nav-item d-block d-md-none d-lg-none pt-2 pb-2">
-                            <a href="#" type="button" class="btn btn-purple w-100 rounded-3">Login</a>
+                            <a href="./login.html" type="button" class="btn btn-purple w-100 rounded-3">Login</a>
                         </li>
                         <li class="nav-item d-none d-md-block d-lg-block">
-                            <a href="#" type="button" class="btn btn-purple rounded-3 ps-lg-5 pe-lg-5">Login</a>
+                            <a href="./login.html" type="button" class="btn btn-purple rounded-3 ps-lg-5 pe-lg-5">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -91,7 +92,7 @@
         <div class="container pt-4 pt-lg-5 pb-lg-5">
             <div class="row">
                 <div class="d-none d-md-none d-lg-block col-lg-3">
-                    <div class="card h-100 rounded-0">
+                    <div class="card h-95 rounded-5">
                         <div class="card-body">
                             <!--Promoções-->
                             <div class="w-100 pt-4 pb-4 border-bottom">
@@ -123,7 +124,189 @@
                                 <div class="card-title d-flex align-items-baseline">
                                     <h4 class="fs-5 fw-bold me-2">Preço</h4>
                                 </div>
-                                <label for=""></label>
+                                <label for="range" class="form-label">R$: 100,00 á R$: 100.000,00</label>
+                                <input type="range" class="form-range" min="0" max="5" step="0.5" id="range">
+                            </div>
+                            <!--End Preço-->
+                            <!--Tipos de acomodações-->
+                            <div class="w-100 pt-4 pb-4 border-bottom">
+                                <div class="card-title d-flex align-items-baseline">
+                                    <h4 class="fs-5 fw-bold me-2">Tipos de acomodações</h4>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" value="hoteis" id="hoteis">
+                                    <label for="hoteis" class="form-check-label">
+                                        Hotéis
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" value="pousadas" id="pousadas">
+                                    <label for="pousadas" class="form-check-label">
+                                        Pousadas
+                                    </label>
+                                </div>
+                            </div>
+                            <!--End acomodações-->
+                            <!--Serviços-->
+                            <div class="w-100 pt-4 pb-4 border-bottom">
+                                <div class="card-title d-flex align-items-baseline">
+                                    <h4 class="fs-5 fw-bold me-2">Serviços</h4>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" value="internet" id="internet">
+                                    <label for="internet" class="form-check-label">
+                                        Internet
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" value="praia" id="praia">
+                                    <label for="praia" class="form-check-label">
+                                        Praia
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" value="estacionamento" id="estacionamento">
+                                    <label for="estacionamento" class="form-check-label">
+                                        Estacionamento
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" value="piscina" id="piscina">
+                                    <label for="piscina" class="form-check-label">
+                                        Piscina
+                                    </label>
+                                </div>
+                            </div>
+                            <!--End Serviços-->
+                            <!--Btn Aplicar-->
+                            <div class="w-100 pt-4 pb-4 d-flex justify-content-end">
+                                <button type="button" class="btn btn-purple pe-4 ps-4 rounded-4 w-100" disabled>Aplicar</button>
+                            </div>
+                            <!--End Btn-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-9">
+                    <div class="alert alert-info alert-dismissible fade show rounded-4" role="alert">
+                        <span>
+                            <i class="fa fa-tag me-2" aria-hidden="true"></i>
+                            Itens abaixo em promoção
+                        </span>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <div class="card mb-3 rounded-2">
+                        <div class="row g-0 pe-0 me-0">
+                            <div class="col-md-4">
+                                <div class="position-relative h-100">
+                                    <img src="./assets/img/banners/banner-1-hotel.jpg" class="card-img-default" alt="">
+                                    <span class="position-absolute bottom-1 right-0 bg-color-purple ps-2 pe-2 pt-1 pb-1">R$:799,00</span>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body overflow-hidden pe-0 me-0 pb-0 mb-0 ps-0">
+                                    <h5 class="card-title mb-1 ps-3 pe-3">Hotel King's</h5>
+                                    <p class="text-muted mb-1 ps-3 pe-3">Monte San Savino, Itália</p>
+                                    <div class="stars ps-3 pe-3">
+                                        <span class="star"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                        <span class="star"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                        <span class="star"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                        <span class="star"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                        <span class="star"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    </div>
+                                    <p class="text-muted pt-3 pb-2 ps-3 pe-3">Hotel em um lugar calmo e tranquilo, para se confortar como um Rei.</p>
+                                    <div class="card-footer row border-0 pe-0 me-0 ps-0 ms-0">
+                                        <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center pt-1 pb-1">
+                                            <span class="material-icons me-2">local_dining</span>
+                                            Restaurante
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center pt-1 pb-1">
+                                            <span class="material-icons me-2">pool</span>
+                                            Piscina
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center pt-1 pb-1">
+                                            <span class="material-icons me-2">wifi</span>
+                                            Wi-fi
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 rounded-2">
+                        <div class="row g-0 pe-0 me-0">
+                            <div class="col-md-4">
+                                <div class="position-relative h-100">
+                                    <img src="./assets/img/banners/banner-2-hotel.jpg" class="card-img-default" alt="">
+                                    <span class="position-absolute bottom-1 right-0 bg-color-purple ps-2 pe-2 pt-1 pb-1">R$:900,00</span>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body overflow-hidden pe-0 me-0 pb-0 mb-0 ps-0">
+                                    <h5 class="card-title mb-1 ps-3 pe-3">Night City Hotel</h5>
+                                    <p class="text-muted mb-1 ps-3 pe-3">Kariani, Bulgaria</p>
+                                    <div class="stars ps-3 pe-3">
+                                        <span class="star"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                        <span class="star"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                        <span class="star"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                        <span class="star"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                        <span class="star"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    </div>
+                                    <p class="text-muted pt-3 pb-2 ps-3 pe-3">Quer um Hotel em um lugar com bastante pontos de mercadorias e lojas? Então este é o lugar.</p>
+                                    <div class="card-footer row border-0 pe-0 me-0 ps-0 ms-0">
+                                        <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center pt-1 pb-1">
+                                            <span class="material-icons me-2">local_dining</span>
+                                            Restaurante
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center pt-1 pb-1">
+                                            <span class="material-icons me-2">pool</span>
+                                            Piscina
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center pt-1 pb-1">
+                                            <span class="material-icons me-2">wifi</span>
+                                            Wi-fi
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 rounded-2">
+                        <div class="row g-0 pe-0 me-0">
+                            <div class="col-md-4">
+                                <div class="position-relative h-100">
+                                    <img src="./assets/img/banners/banner-5-hotel.jpg" class="card-img-default" alt="">
+                                    <span class="position-absolute bottom-1 right-0 bg-color-blue ps-2 pe-2 pt-1 pb-1">R$:650,00</span>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body overflow-hidden pe-0 me-0 pb-0 mb-0 ps-0">
+                                    <h5 class="card-title mb-1 ps-3 pe-3">Marina Bay Sands</h5>
+                                    <p class="text-muted mb-1 ps-3 pe-3">Johor Bahru, Singapura</p>
+                                    <div class="stars ps-3 pe-3">
+                                        <span class="star"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                        <span class="star"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                        <span class="star"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                        <span class="star"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                        <span class="star"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    </div>
+                                    <p class="text-muted pt-3 pb-2 ps-3 pe-3">Marina Bay Sands é um complexo de luxo, conhecido por sua arquitetura impressionante.</p>
+                                    <div class="card-footer row border-0 pe-0 me-0 ps-0 ms-0">
+                                        <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center pt-1 pb-1">
+                                            <span class="material-icons me-2">local_dining</span>
+                                            Restaurante
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center pt-1 pb-1">
+                                            <span class="material-icons me-2">pool</span>
+                                            Piscina
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center pt-1 pb-1">
+                                            <span class="material-icons me-2">wifi</span>
+                                            Wi-fi
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
